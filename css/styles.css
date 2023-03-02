@@ -170,6 +170,8 @@
     font-size: 9px;
     transition-delay: 1s;
     transition: 01s;
+    display: block;
+    z-index: 1;
 }
 
 .Product__product-drop {
@@ -190,6 +192,8 @@
     position: absolute;
     left: -100%;
     transition: 1s;
+    display: block;
+    z-index: 2;
 }
 
 .Product__car-gone {
