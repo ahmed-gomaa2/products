@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.os {
+    background: red;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.Product__item-container {
+    background: red;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    z-index: 100;
+    align-items: center;
+}
+
+.Navbar__logo {
+    font-size: 30px !important;
+}
+
+.Navbar__bag {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Nav__car {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    z-index: 1;
+    color: red;
+}
+.Product__item:hover .Product__sidebar {
+    transform: translateX(0);
+}
+
+.Products__car {
+    opacity: 0;
+    z-index: -100;
+}
+
+.Products__cost-dollar {
+
+}
+
+.Products__container {
+}
+
+.Product__hidden {
+    display: none !important;
+}
+
+.Products__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Products__close:hover i {
+    color: red;
+}
+
+.Products__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.Product__right-count {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.Products__car-show {
+    opacity: 1;
+    z-index: 200;
+}
+
+.Products__car-content {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    height: 100vh;
+    z-index: 200;
+    background: white;
+    transition: 0.3s;
+}
+
+.Products__car-content--show {
+    transform: translateX(0);
+}
+
+.Products__car-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.Products__car-overlay--show {
+    opacity: 1;
+}
+
+.Product__sidebar {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.Product__sidebar p i {
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Product__item {
+    position: relative;
+}
+
+.Product__buy {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.Product__button {
+    flex: 100;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    background: blue;
+    position: relative;
+}
+
+.Product__product {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-100%);
+    font-size: 9px;
+    transition-delay: 1s;
+    transition: 01s;
+}
+
+.Product__product-drop {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Product__button:hover {
+    background: darkblue;
+}
+
+.Product__count {
+    height: 100%;
+    margin-right: 5px;
+}
+
+.Product__car {
+    position: absolute;
+    left: -100%;
+    transition: 1s;
+}
+
+.Product__car-gone {
+    left: 120% !important;
+}
+
+.Product__car-active {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Product__text{
+    transition: 0.3s;
+}
+
+.Product__text-remove {
+    opacity: 0;
+}
+
+.Product__add {
+    position: relative;
+}
+
+.buy {
+    position: absolute;
+    top: 0;
+    left: -180%;
+    height: 100%;
+    line-height: 50px;
+    transition: 0.3s;
+    transform: translateX(160%);
+}
+
+.Product__add:hover .buy {
+    transform: none;
+}
+
+.Product__item-container {
+    padding: 0 20px;
+}
